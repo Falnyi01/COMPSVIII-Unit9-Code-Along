@@ -5,7 +5,7 @@ steps:
   
   # Push the image to Container Registry 
   - name: 'gcr.io/cloud-builders/docker' 
-  args: ['push', 'gcr.io/$PROJECT_ID/app-backend'] 
+    args: ['push', 'gcr.io/$PROJECT_ID/app-backend'] 
   
   # Deploy to Cloud Run 
   - name: 'gcr.io/cloud-builders/gcloud' 
