@@ -3,7 +3,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker' 
     args: [ 
     'build', '--build-arg', 
-    'VITE_API_URL=https://app-backend-795763920468.us-central1.run.app/', 
+    'VITE_API_URL=https://app-backend-795763920468.us-central1.run.app', 
     '-t', 'gcr.io/$PROJECT_ID/recipe-frontend', 
     './frontend'
   ] 
